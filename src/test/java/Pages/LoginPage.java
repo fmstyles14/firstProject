@@ -18,7 +18,7 @@ public class LoginPage {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(name="email" )private WebElement username;
+    @FindBy(name="email")private WebElement username;
     @FindBy(id= "password") private WebElement passwd;
     @FindBy(name ="commit") private WebElement LoginBtn;
     @FindBy(xpath = "//*[text()='There was a problem with your login.']")private  WebElement errMssg;
